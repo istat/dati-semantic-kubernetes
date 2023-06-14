@@ -1,5 +1,5 @@
-[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://github.com/teamdigitale/dati-semantic-kubernetes/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/teamdigitale/dati-semantic-kubernetes.svg)](https://github.com/teamdigitale/dati-semantic-kubernetes/issues)
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://github.com/istat/dati-semantic-kubernetes/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/istat/dati-semantic-kubernetes.svg)](https://github.com/istat/dati-semantic-kubernetes/issues)
 
 # dati-semantic-kubernetes
 
@@ -9,22 +9,22 @@ We use branch based environments to manage the configuration. The branch name is
 
 ## Environments
 
-- [dev](https://github.com/teamdigitale/dati-semantic-kubernetes/tree/dev)
-- [test](https://github.com/teamdigitale/dati-semantic-kubernetes/tree/test)
-- [prod](https://github.com/teamdigitale/dati-semantic-kubernetes/tree/prod)
+- [dev](https://github.com/istat/dati-semantic-kubernetes/tree/dev)
+- [test](https://github.com/istat/dati-semantic-kubernetes/tree/test)
+- [prod](https://github.com/istat/dati-semantic-kubernetes/tree/prod)
 
 ## Deliverables
 
 The deliverables' repositories are:
 
 - The NDC application:
-  - https://github.com/teamdigitale/dati-semantic-backend
-  - https://github.com/teamdigitale/dati-semantic-frontend
+  - https://github.com/istat/dati-semantic-backend
+  - https://github.com/istat/dati-semantic-frontend
 
 - Semantic viewers:
-  - https://github.com/teamdigitale/dati-semantic-lodview
-  - https://github.com/teamdigitale/LODE
-  - https://github.com/teamdigitale/dati-semantic-WebVOWL
+  - https://github.com/istat/dati-semantic-lodview
+  - https://github.com/istat/LODE
+  - https://github.com/istat/dati-semantic-WebVOWL
 
 ## Automation (Only for the `dev` environment)
 
@@ -54,7 +54,7 @@ Registry -.- |download images| INFRA
 dev -->|push\n changes fa:fa-code-merge| Applications
 Applications -->|CI triggers workflow\nusing an access token\n on| KUBE
 Applications -->|CI pushes\nimages| Registry
-click KUBE "https://github.com/teamdigitale/dati-semantic-frontend/blob/main/.github/workflows/node.js.yml#L137" "Github Action"
+click KUBE "https://github.com/istat/dati-semantic-frontend/blob/main/.github/workflows/node.js.yml#L137" "Github Action"
 KUBE --> |github webhook triggers\ndeployment| INFRA([ISTAT dev\ninfrastructure fa:fa-server])
 
 
